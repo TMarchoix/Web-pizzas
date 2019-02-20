@@ -11,9 +11,11 @@
  * 1. Définition des constantes
  */
 
+ //Définir le chemin du répertoire "utils"
+ define('UTILS_PATH', "../private/app/utils/");
+
 // WEBSITE_TITLE : Definition du titre du site
 define('WEBSITE_TITLE', "WebPizza !");
-
 
 /**
  * 2. Définition des variables d'environnement d'exécution
@@ -28,5 +30,5 @@ $env = "prod";
 $dev_domains = [
     "127.0.0.1",
     "localhost",
-    "webpizza.local"
+    "web-pizzas.local"
 ];
