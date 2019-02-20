@@ -16,3 +16,5 @@ function dump($data){
     print_r($data);
     echo "</pre>";
 }
+git remote add origin https://github.com/TMarchoix/Web-pizzas.git
+git push -u origin master
