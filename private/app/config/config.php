@@ -11,11 +11,12 @@
  * 1. Définition des constantes
  */
 
- //Définir le chemin du répertoire "utils"
- define('UTILS_PATH', "../private/app/utils/");
+// Definir le chemin du répertoire "utils"
+define('UTILS_PATH', "../private/app/utils/");
 
 // WEBSITE_TITLE : Definition du titre du site
 define('WEBSITE_TITLE', "WebPizza !");
+
 
 /**
  * 2. Définition des variables d'environnement d'exécution
@@ -30,11 +31,11 @@ $env = "prod";
 $dev_domains = [
     "127.0.0.1",
     "localhost",
-    "web-pizzas.local"
+    "webpizza.local"
 ];
 
 /**
- *  3. Définition des variables de bes de données
+ * 3. Définition des variables de base de données
  */
 
 // Liste des configurations de connections aux bases de données par défaut
@@ -46,3 +47,19 @@ $db = [];
 
 // Inclusion de la config de la base de données
 require_once "database.php";
+
+/**
+ * 4. Définition des variables de routage
+ */
+
+// Définition de l'uri par défaut
+$uri = "/";
+
+// Définition de la table de routage par défaut
+$routes = [];
+
+// Contient les information de la route courante
+$route = [];
+
+// Inclusion de la config du routage
+require_once "routes.php";
